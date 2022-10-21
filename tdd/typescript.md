@@ -92,7 +92,7 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 - Now you can just use Ctrl + Shift + B to start automatic transpilation
   - This will make it seem like you can't run anything else in the terminal, but you can: 
   - Terminal => New Terminal
-  - Now you can (for instance) get automatic tests running with `npm run test:char` (if you've set up the ["scripts" section in `package.json`](/pages/coding/tools/testing/jest.md#running-only-subsets-of-tests))
+  - Now you can (for instance) get automatic tests running with `npm run test:char` (if you've set up the ["scripts" section in `package.json`](/tdd/jest.md#running-only-subsets-of-tests))
   - You now have two terminal windows open, but that's not immediately obvious
   - If you look to the right hand side of your Terminal panel, there's an extra bit that lists "watch - tsconfig.json" and something else (for `npm run test` it'll say "node")
   - Just select whichever one you're interested in (which is most likely the test runner)
@@ -143,6 +143,8 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 
 ## Put js and js.map files somewhere out of sight
 
+- An alternative to this method is to [make derived files invisible](#making-derived-files-invisible-in-vs-code).
+  - I ended up using this method - see note below.
 - To stop your folder getting cluttered with .js and .js.,ap files...
   - Add an `outDir` line to your `tsconfig.json` file.
   - This will mean that the extra files are created in an `out` folder
@@ -162,11 +164,10 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 - Unfortunately if you have already transpiled some typescript before you make this change, the old files will still be there as well as the new ones in the `out` folder
   - You can just delete the old files
 - Also, if you make this change and you're using a command to run tests only in one folder, it will mess with that
-  - It's all about the `package.json` ["scripts" setting](/pages/coding/tools/testing/jest.md#running-only-subsets-of-tests)
+  - It's all about the `package.json` ["scripts" setting](/tdd/jest.md#running-only-subsets-of-tests)
   - It should be possible to fix this with the right regex in the `testPathPattern` section, but I couldn't get this working because I'm hopeless at regex
     - I asked a Stack Overflow question about it [here](https://stackoverflow.com/questions/74141047/how-to-create-simple-readable-regex-that-matches-either-of-two-possible-file-pat)
   - So in the end I gave up and used the [making files invisible](#making-derived-files-invisible-in-vs-code) method.  
-- An alternative to this method is to [make derived files invisible](#making-derived-files-invisible-in-vs-code).
 
 ## Making derived files invisible in VS Code 
 

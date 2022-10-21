@@ -11,7 +11,7 @@
 
 # Running only subsets of tests
 
-Because I edited my package.json like this...
+You can edit or add a "scripts" section in your `package.json` like this...
 
 ```
 "scripts": {
@@ -21,4 +21,4 @@ Because I edited my package.json like this...
   },
 ```
 
-... I can run this in the terminal - `npm run test:char` - and it will watch my code and run tests in the background, but only for the specified folder.
+This will allow you to run this in the terminal - `npm run test:char` - and it will watch your code and run tests in the background whenever you edit your code, but only for the specified sub-folder.
