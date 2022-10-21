@@ -164,4 +164,6 @@ This won't work! This gives you enough to move you further on, but I've missed o
 
 # Don't forget transpilation
 
-Remember that every time you change the typescript code you have to recreate the javascript. So for instance every time you edit `source.ts` you have to run `tsc source.ts` again OR HAVE AUTOMATIC TRANSPILATION CONFIGURED ([instructions here](/tdd/typescript.md#automate-transpilation-in-vs-code)]). The same is true for all the different typescript files (the ones that end `.ts` instead of `.js`). Automatic transpilation ftw.
+!! Remember that every time you change the typescript code, you have to recreate the javascript. So for instance every time you edit `source.ts` you have to run `tsc source.ts` again. The same is true for all the different typescript files (the ones that end `.ts` instead of `.js`). To avoid having to keep running the `tsc` command, [configure automatic transpilation](/tdd/typescript.md#automate-transpilation-in-vs-code).
+
+The clue that your typescript is not transpiled into javascript is when the test failure message references the javascript version of the file (`source.js` instead of `source.ts`) ... and you think "but I already fixed that code!" It's much better to have automatic transpilation configured - ([instructions here](/tdd/typescript.md#automate-transpilation-in-vs-code)]). 

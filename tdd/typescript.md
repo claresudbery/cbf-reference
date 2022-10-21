@@ -48,7 +48,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 - Run the `npm install -g typescript` command again. It should work this time.
 
-!! Remember that every time you change the source code you have to recreate the javascript. So for instance every time you edit `source.ts` you have to run `tsc source.ts` again. This is why my code failed the last time I ran the tests in class. The clue is when the test failure message references the javascript version of the file (`source.js` instead of `source.ts`) ... and you think "but I already fixed that code!" (but see below on automation)
+!! Remember that every time you change the typescript code, you have to recreate the javascript. So for instance every time you edit `source.ts` you have to run `tsc source.ts` again. The same is true for all the different typescript files (the ones that end `.ts` instead of `.js`). To avoid having to keep running the `tsc` command, [configure automatic transpilation](#automate-transpilation-in-vs-code).
+
+The clue that your typescript is not transpiled into javascript is when the test failure message references the javascript version of the file (`source.js` instead of `source.ts`) ... and you think "but I already fixed that code!" It's much better to have automatic transpilation configured - ([instructions below](#automate-transpilation-in-vs-code)]). 
 
 # Automate transpilation in VS Code
 
