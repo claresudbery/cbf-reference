@@ -7,7 +7,7 @@
 # Misc
 
 - Jest is a javascript unit testing framework
-- [Docs](https://jestjs.io/docs)
+- [Getting started with Jest](https://jestjs.io/docs/getting-started)
 - [Matchers](https://jestjs.io/docs/using-matchers)
 
 # Running only subsets of tests
