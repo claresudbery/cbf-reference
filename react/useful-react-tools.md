@@ -20,3 +20,7 @@
     - Click Environment variables
     - Find the path variable under user variables. Select it and click Edit...
     - If you can't see `C:\Program Files\nodejs` or `C:\Program Files (x86)\nodejs` listed, click New and add it (check your file explorer to see which version is correct).
+
+# React Developer Tools
+
+- Chrome extension, v useful. Can be [found here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en).
