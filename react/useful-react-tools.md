@@ -24,3 +24,8 @@
 # React Developer Tools
 
 - Chrome extension, v useful. Can be [found here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en).
+
+# React forms
+
+- [useful demo here](https://www.w3schools.com/react/react_forms.asp)
+- [Passing data and events between React components](https://www.freecodecamp.org/news/pass-data-between-components-in-react)
