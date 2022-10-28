@@ -29,3 +29,7 @@
 
 - [useful demo here](https://www.w3schools.com/react/react_forms.asp)
 - [Passing data and events between React components](https://www.freecodecamp.org/news/pass-data-between-components-in-react)
+
+# Warnings about lists and keys
+
+[See here](https://reactjs.org/docs/lists-and-keys.html#keys)
