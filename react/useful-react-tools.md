@@ -1,3 +1,12 @@
+# Table of Contents
+
+- [Automatically responding to code changes with Live Server](#automatically-responding-to-code-changes-with-live-server)
+- [create-react-app](#create-react-app)
+  - [create-react-app - troubleshooting](#create-react-app---troubleshooting)
+- [React Developer Tools](#react-developer-tools)
+- [React forms](#react-forms)
+- [Warnings about lists and keys](#warnings-about-lists-and-keys)
+
 # Automatically responding to code changes with Live Server
 
 - On command line: `npm install -g live-server`
